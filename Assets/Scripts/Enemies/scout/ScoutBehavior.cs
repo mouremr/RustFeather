@@ -50,7 +50,6 @@ public class ScoutBehavior : MonoBehaviour
     void Update()
     {
         playerInSight = PlayerIsInSight();
-        
         if (isAttacking){ //if attacking, finish attack 
             rb.linearVelocity = Vector2.zero;
             anim.SetBool("chasePlayer", false);

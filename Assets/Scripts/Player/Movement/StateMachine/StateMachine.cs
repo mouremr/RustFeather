@@ -5,6 +5,8 @@ public class StateMachine : MonoBehaviour
 {
 
     [SerializeField] private PlayerStateConfig stateConfig;
+    private GameObject body;
+    private GameObject legs;
     //[SerializeField] private LayerMask climbable;
     // [SerializeField] private PhysicsMaterial2D noFriction;
     // [SerializeField] private PhysicsMaterial2D fullFriction;
@@ -34,6 +36,18 @@ public class StateMachine : MonoBehaviour
     public float MaxHealth => maxHealth;
     public PlayerStateFactory States { get; private set; }
 
+
+    public Rigidbody2D rb { get; private set; }
+    public Animator animator { get; private set; }
+    public PlayerInput input { get; private set; }
+    public SpriteRenderer bodySpriteRenderer { get; private set; }
+    public SpriteRenderer legsSpriteRenderer { get; private set; }
+    public BoxCollider2D playerCollider { get; private set; }
+    public CameraFollow cam { get; private set; }
+    public LayerMask groundMask { get; private set; }
+    public LayerMask climbableMask { get; private set; }
+    public LayerMask platformMask { get; private set; }
+
     private void Awake()
     {
         States = new PlayerStateFactory(this, stateConfig);
@@ -42,7 +56,23 @@ public class StateMachine : MonoBehaviour
         maxStamina = stateConfig.maxStamina;
         currentStamina = maxStamina;
         staminaRegenRate = stateConfig.staminaRegenRate;
-        //staminaRegenDelay = stateConfig.staminaRegenDelay;        
+        //staminaRegenDelay = stateConfig.staminaRegenDelay;
+
+
+
+
+        body = transform.Find("Body").gameObject;
+        legs = transform.Find("Body/Legs").gameObject;
+        rb = GetComponent<Rigidbody2D>();
+        animator = body.GetComponent<Animator>();
+        input = GetComponent<PlayerInput>();
+        bodySpriteRenderer = body.GetComponent<SpriteRenderer>();
+        legsSpriteRenderer = legs.GetComponent<SpriteRenderer>();
+        playerCollider = GetComponent<BoxCollider2D>();
+        cam = Camera.main.GetComponent<CameraFollow>();
+        groundMask = LayerMask.GetMask("Ground");
+        climbableMask = LayerMask.GetMask("Climbable");
+        platformMask = LayerMask.GetMask("Platform");       
     }
 
     private void Start()

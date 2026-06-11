@@ -23,19 +23,21 @@ public abstract class PlayerState
 
     public PlayerState(StateMachine stateMachine, PlayerStateConfig config)
     {
+        //TODO: pass these in?
         this.stateMachine = stateMachine;
         this.config = config;
         player = stateMachine.gameObject;
-        rb = player.GetComponent<Rigidbody2D>();
-        animator = player.GetComponent<Animator>();
-        input = player.GetComponent<PlayerInput>();
-        bodySpriteRenderer = player.GetComponent<SpriteRenderer>();
-        legsSpriteRenderer = player.transform.Find("Legs")?.GetComponent<SpriteRenderer>();
-        playerCollider = player.GetComponent<BoxCollider2D>();
-        camera = Camera.main.GetComponent<CameraFollow>();
-        groundMask = LayerMask.GetMask("Ground");
-        climbableMask = LayerMask.GetMask("Climbable");
-        platformMask = LayerMask.GetMask("Platform");
+        player = stateMachine.gameObject;
+        rb = stateMachine.rb;
+        animator = stateMachine.animator;
+        input = stateMachine.input;
+        bodySpriteRenderer = stateMachine.bodySpriteRenderer;
+        legsSpriteRenderer = stateMachine.legsSpriteRenderer;
+        playerCollider = stateMachine.playerCollider;
+        camera = stateMachine.cam;
+        groundMask = stateMachine.groundMask;
+        climbableMask = stateMachine.climbableMask;
+        platformMask = stateMachine.platformMask;
 
     }
 
