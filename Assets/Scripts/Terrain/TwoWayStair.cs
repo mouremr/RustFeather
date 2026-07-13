@@ -60,6 +60,13 @@ public class TwoWayStair : MonoBehaviour
             isOnPlatform = false;
             stairs.layer = defaultLayer;
         }
+
+        if(fellThrough && playerCollider.bounds.max.y <= stairBounds[currentStairIndex].min.y)
+        {
+            fellThrough = false;
+            effector.surfaceArc = 180f;
+            stairs.layer = platformLayer;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
