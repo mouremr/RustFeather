@@ -14039,7 +14039,7 @@ Transform:
   m_GameObject: {fileID: 1499536481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0056326496, w: 0.9999842}
-  m_LocalPosition: {x: 33.685184, y: 4.490975, z: -20}
+  m_LocalPosition: {x: 20.735184, y: 4.490975, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14665,7 +14665,6 @@ GameObject:
   - component: {fileID: 1765818934}
   - component: {fileID: 1765818933}
   - component: {fileID: 1765818932}
-  - component: {fileID: 1765818931}
   - component: {fileID: 1765818929}
   m_Layer: 10
   m_Name: Play_drop through stairs
@@ -14701,266 +14700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f657c82d93ee8049a2f541c86d45e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TwoWayStair
-  stairsCollider: {fileID: 1765818931}
+  stairsCollider: {fileID: 1765818933}
   playerCollider: {fileID: 8573200573119653379}
   stairs: {fileID: 1765818927}
   playerMask:
     serializedVersion: 2
     m_Bits: 256
---- !u!66 &1765818931
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765818927}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1765818933}
-    m_ColliderPaths:
-    - - X: 340000000
-        Y: 80937504
-      - X: 330937504
-        Y: 90000000
-      - X: 330000000
-        Y: 90000000
-      - X: 330000000
-        Y: 90937504
-      - X: 320937504
-        Y: 100000000
-      - X: 320000000
-        Y: 100000000
-      - X: 320000000
-        Y: 100937504
-      - X: 310937504
-        Y: 110000000
-      - X: 310000000
-        Y: 110000000
-      - X: 310000000
-        Y: 105000000
-      - X: 315000000
-        Y: 100000000
-      - X: 315312512
-        Y: 100000000
-      - X: 315312512
-        Y: 99687504
-      - X: 319687488
-        Y: 95312496
-      - X: 320000000
-        Y: 95312496
-      - X: 320000000
-        Y: 95000000
-      - X: 325000000
-        Y: 90000000
-      - X: 325312512
-        Y: 90000000
-      - X: 325312512
-        Y: 89687504
-      - X: 329687488
-        Y: 85312496
-      - X: 330000000
-        Y: 85312496
-      - X: 330000000
-        Y: 85000000
-      - X: 335000000
-        Y: 80000000
-      - X: 335312512
-        Y: 80000000
-      - X: 335312512
-        Y: 79687504
-      - X: 339687488
-        Y: 75312496
-      - X: 340000000
-        Y: 75312496
-    - - X: 410000000
-        Y: 35000000
-      - X: 410000000
-        Y: 35312500
-      - X: 410312512
-        Y: 35312500
-      - X: 414687488
-        Y: 39687500
-      - X: 414687488
-        Y: 40000000
-      - X: 415000000
-        Y: 40000000
-      - X: 420000000
-        Y: 45000000
-      - X: 420000000
-        Y: 45312500
-      - X: 420312512
-        Y: 45312500
-      - X: 424687488
-        Y: 49687500
-      - X: 424687488
-        Y: 50000000
-      - X: 425000000
-        Y: 50000000
-      - X: 430000000
-        Y: 55000000
-      - X: 430000000
-        Y: 55312500
-      - X: 430312512
-        Y: 55312500
-      - X: 434687488
-        Y: 59687500
-      - X: 434687488
-        Y: 60000000
-      - X: 435000000
-        Y: 60000000
-      - X: 440000000
-        Y: 65000000
-      - X: 440000000
-        Y: 65312500
-      - X: 440312512
-        Y: 65312500
-      - X: 444687488
-        Y: 69687504
-      - X: 444687488
-        Y: 70000000
-      - X: 445000000
-        Y: 70000000
-      - X: 450000000
-        Y: 75000000
-      - X: 450000000
-        Y: 80000000
-      - X: 449062496
-        Y: 80000000
-      - X: 440000000
-        Y: 70937504
-      - X: 440000000
-        Y: 70000000
-      - X: 439062496
-        Y: 70000000
-      - X: 430000000
-        Y: 60937500
-      - X: 430000000
-        Y: 60000000
-      - X: 429062496
-        Y: 60000000
-      - X: 420000000
-        Y: 50937500
-      - X: 420000000
-        Y: 50000000
-      - X: 419062496
-        Y: 50000000
-      - X: 410000000
-        Y: 40937500
-      - X: 410000000
-        Y: 40000000
-      - X: 409062496
-        Y: 40000000
-      - X: 400000000
-        Y: 30937500
-      - X: 400000000
-        Y: 30000000
-      - X: 405000000
-        Y: 30000000
-  m_CompositePaths:
-    m_Paths:
-    - - {x: 34, y: 8.093751}
-      - {x: 33.09375, y: 9}
-      - {x: 33, y: 9}
-      - {x: 33, y: 9.093751}
-      - {x: 32.09375, y: 10}
-      - {x: 32, y: 10}
-      - {x: 32, y: 10.093751}
-      - {x: 31.09375, y: 11}
-      - {x: 31, y: 11}
-      - {x: 31, y: 10.5}
-      - {x: 31.5, y: 10}
-      - {x: 31.531252, y: 10}
-      - {x: 31.531252, y: 9.968751}
-      - {x: 31.96875, y: 9.53125}
-      - {x: 32, y: 9.53125}
-      - {x: 32, y: 9.5}
-      - {x: 32.5, y: 9}
-      - {x: 32.53125, y: 9}
-      - {x: 32.53125, y: 8.968751}
-      - {x: 32.96875, y: 8.53125}
-      - {x: 33, y: 8.53125}
-      - {x: 33, y: 8.5}
-      - {x: 33.5, y: 8}
-      - {x: 33.53125, y: 8}
-      - {x: 33.53125, y: 7.9687505}
-      - {x: 33.96875, y: 7.5312495}
-      - {x: 34, y: 7.5312495}
-    - - {x: 41, y: 3.5}
-      - {x: 41, y: 3.53125}
-      - {x: 41.03125, y: 3.53125}
-      - {x: 41.46875, y: 3.96875}
-      - {x: 41.46875, y: 4}
-      - {x: 41.5, y: 4}
-      - {x: 42, y: 4.5}
-      - {x: 42, y: 4.53125}
-      - {x: 42.03125, y: 4.53125}
-      - {x: 42.46875, y: 4.96875}
-      - {x: 42.46875, y: 5}
-      - {x: 42.5, y: 5}
-      - {x: 43, y: 5.5}
-      - {x: 43, y: 5.53125}
-      - {x: 43.03125, y: 5.53125}
-      - {x: 43.46875, y: 5.96875}
-      - {x: 43.46875, y: 6}
-      - {x: 43.5, y: 6}
-      - {x: 44, y: 6.5}
-      - {x: 44, y: 6.53125}
-      - {x: 44.03125, y: 6.53125}
-      - {x: 44.46875, y: 6.9687505}
-      - {x: 44.46875, y: 7}
-      - {x: 44.5, y: 7}
-      - {x: 45, y: 7.5}
-      - {x: 45, y: 8}
-      - {x: 44.90625, y: 8}
-      - {x: 44, y: 7.0937505}
-      - {x: 44, y: 7}
-      - {x: 43.90625, y: 7}
-      - {x: 43, y: 6.09375}
-      - {x: 43, y: 6}
-      - {x: 42.90625, y: 6}
-      - {x: 42, y: 5.09375}
-      - {x: 42, y: 5}
-      - {x: 41.90625, y: 5}
-      - {x: 41, y: 4.09375}
-      - {x: 41, y: 4}
-      - {x: 40.90625, y: 4}
-      - {x: 40, y: 3.09375}
-      - {x: 40, y: 3}
-      - {x: 40.5, y: 3}
-  m_VertexDistance: 0.1
-  m_OffsetDistance: 0
-  m_UseDelaunayMesh: 0
-  m_CompositeGameObject: {fileID: 1765818927}
 --- !u!50 &1765818932
 Rigidbody2D:
   serializedVersion: 5
@@ -15020,7 +14765,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 1
+  m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
@@ -17641,7 +17386,7 @@ Camera:
   far clip plane: 1000
   field of view: 61.6
   orthographic: 1
-  orthographic size: 5.625
+  orthographic size: 1.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17847,7 +17592,7 @@ Transform:
   m_GameObject: {fileID: 8861158268526663403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.0056326496, w: 0.9999842}
-  m_LocalPosition: {x: 33.685184, y: 4.490975, z: -20}
+  m_LocalPosition: {x: 20.735184, y: 4.490975, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18191,7 +17936,7 @@ Transform:
   m_GameObject: {fileID: 3637178345579746104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -12.95, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

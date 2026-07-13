@@ -55,8 +55,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FogSize: 4.66
-    - _Pixel_Size: 2
+    - _FogSize: 3.18
+    - _Pixel_Size: 8
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScrollSpeed: 0
