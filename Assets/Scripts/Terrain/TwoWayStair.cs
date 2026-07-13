@@ -25,6 +25,7 @@ public class TwoWayStair : MonoBehaviour
     }
     void CacheStairBounds()
     {
+        //find bounds of each seperate staircase
         stairBounds.Clear();
 
         for (int i = 0; i < stairsCollider.pathCount; i++)
@@ -63,6 +64,7 @@ public class TwoWayStair : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        //if we are above the nearest staircase, or next to it, reset the staircase collider
         if (collision.collider != playerCollider)
             return;
         //ColliderDistance2D distance = Physics2D.Distance(stairsCollider, playerCollider);
@@ -84,7 +86,7 @@ public class TwoWayStair : MonoBehaviour
         {
             Bounds b = stairBounds[i];
 
-            // Ignore staircases that are nowhere near the player.
+            //ignore staircases that are further away
             if (playerPos.x < b.min.x - 0.5f || playerPos.x > b.max.x + 0.5f)
                 continue;
 
