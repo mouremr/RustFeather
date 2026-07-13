@@ -23,7 +23,7 @@ MonoBehaviour:
   maxStamina: 20
   staminaRegenRate: 5
   staminaRegenDelay: 0.5
-  lightAttackCost: 5
+  lightAttackCost: 0
   heavyAttackCost: 10
   noFriction: {fileID: 6200000, guid: d437b71367a1f434f9073fbe62dc4814, type: 2}
   fullFriction: {fileID: 6200000, guid: 28a7b1c50ed872a4795a10ce81f3c0a5, type: 2}
