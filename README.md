@@ -1,4 +1,8 @@
 # Post-apocalypse-gaem
+
+1/2/2025
+fixed bug whre iris would still be in wall climbing position after sliding off a wall not touching the ground
+
 12/22/2025
 
 wall push off uses no stamina
