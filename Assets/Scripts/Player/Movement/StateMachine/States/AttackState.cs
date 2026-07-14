@@ -23,11 +23,10 @@ public class AttackState : PlayerState
         //rb.linearVelocity = Vector2.zero;
         //rb.AddForce(new Vector2(attackforce * input.HorizontalInput, 0), ForceMode2D.Impulse);
         // get attack animation length
-        attackDuration = animator.GetCurrentAnimatorStateInfo(0).length; 
+        attackDuration = animator.GetCurrentAnimatorStateInfo(2).length;  //2 is the weapon attack layer
         attackTimer += Time.deltaTime;
 
         
-
         if(attackTimer >= attackDuration)
         {
             animator.SetBool(attackType, false);
@@ -41,5 +40,7 @@ public class AttackState : PlayerState
     {
         animator.SetBool(attackType, true);        
     }
+
+
 
 }

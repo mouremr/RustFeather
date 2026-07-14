@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 905018b503124b9499a2c01c1eec4432
+guid: 2343d41085520f94e97885fe92cfdf4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4814963781893962527
-    second: iris_run_arms_holding_0
+      213: 6024967188578843637
+    second: iris torso run hold_0
   - first:
-      213: -7815484001813211742
-    second: iris_run_arms_holding_1
+      213: -8268413168397119645
+    second: iris torso run hold_1
   - first:
-      213: 6325749333193953053
-    second: iris_run_arms_holding_2
+      213: 573700087977342536
+    second: iris torso run hold_2
   - first:
-      213: 758371651626821029
-    second: iris_run_arms_holding_3
-  - first:
-      213: -619611036102926836
-    second: iris_run_arms_holding_4
-  - first:
-      213: -3096759600214907282
-    second: iris_run_arms_holding_5
-  - first:
-      213: 3863674462686844783
-    second: iris_run_arms_holding_6
-  - first:
-      213: -2602511284835864925
-    second: iris_run_arms_holding_7
+      213: 863060188435636423
+    second: iris torso run hold_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: iris_run_arms_holding_0
+      name: iris torso run hold_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 3
         width: 62
-        height: 69
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1b39228c0032d240800000000000000
-      internalID: 4814963781893962527
+      spriteID: 5fb30a28cbbfc9350800000000000000
+      internalID: 6024967188578843637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_1
+      name: iris torso run hold_1
       rect:
         serializedVersion: 2
         x: 62
-        y: 0
+        y: 3
         width: 62
-        height: 69
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a5dc2465b2d98390800000000000000
-      internalID: -7815484001813211742
+      spriteID: 36f07810802b04d80800000000000000
+      internalID: -8268413168397119645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_2
+      name: iris torso run hold_2
       rect:
         serializedVersion: 2
         x: 124
-        y: 0
+        y: 3
         width: 62
-        height: 69
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f8037d08399c750800000000000000
-      internalID: 6325749333193953053
+      spriteID: 846ff7fb03136f700800000000000000
+      internalID: 573700087977342536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_3
+      name: iris torso run hold_3
       rect:
         serializedVersion: 2
         x: 186
-        y: 0
+        y: 3
         width: 62
-        height: 69
+        height: 66
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,96 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a561f6cff6468a00800000000000000
-      internalID: 758371651626821029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: iris_run_arms_holding_4
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 0
-        width: 62
-        height: 69
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0e5c26ab03b667f0800000000000000
-      internalID: -619611036102926836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: iris_run_arms_holding_5
-      rect:
-        serializedVersion: 2
-        x: 310
-        y: 0
-        width: 62
-        height: 69
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e66e86a0d891605d0800000000000000
-      internalID: -3096759600214907282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: iris_run_arms_holding_6
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 0
-        width: 62
-        height: 69
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f67923404778e9530800000000000000
-      internalID: 3863674462686844783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: iris_run_arms_holding_7
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 0
-        width: 62
-        height: 69
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3aea96f66c502ebd0800000000000000
-      internalID: -2602511284835864925
+      spriteID: 7c0ec7f2ba43afb00800000000000000
+      internalID: 863060188435636423
       vertices: []
       indices: 
       edges: []
@@ -313,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3214ca2fc5f73e64eb8b05d1bc11eb72
+    spriteID: d6f95dde51aa0ce448a3283de3bc0586
     internalID: 0
     vertices: []
     indices: 
@@ -323,16 +223,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":69.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":69.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      iris_run_arms_holding_0: 4814963781893962527
-      iris_run_arms_holding_1: -7815484001813211742
-      iris_run_arms_holding_2: 6325749333193953053
-      iris_run_arms_holding_3: 758371651626821029
-      iris_run_arms_holding_4: -619611036102926836
-      iris_run_arms_holding_5: -3096759600214907282
-      iris_run_arms_holding_6: 3863674462686844783
-      iris_run_arms_holding_7: -2602511284835864925
+      iris torso run hold_0: 6024967188578843637
+      iris torso run hold_1: -8268413168397119645
+      iris torso run hold_2: 573700087977342536
+      iris torso run hold_3: 863060188435636423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
