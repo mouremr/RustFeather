@@ -342,6 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 359464645}
   - component: {fileID: 359464646}
+  - component: {fileID: 359464647}
   m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
@@ -422,6 +423,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &359464647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359464644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759fc8ca4321de04bb57a9367ce7d319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &384267187
 GameObject:
   m_ObjectHideFlags: 0
@@ -20449,7 +20462,7 @@ Transform:
   m_GameObject: {fileID: 1499536481}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.717373, y: 4.489373, z: -20}
+  m_LocalPosition: {x: 33.6493, y: 4.489373, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22514,7 +22527,7 @@ Transform:
   m_GameObject: {fileID: 8861158268526663403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.717373, y: 4.489373, z: -20}
+  m_LocalPosition: {x: 33.6493, y: 4.489373, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

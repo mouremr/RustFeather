@@ -16,8 +16,6 @@ public class ItemOrientation : MonoBehaviour
         
         AnimatorStateInfo stateInfo = IrisAnimator.GetCurrentAnimatorStateInfo(0);
 
-
-
         SpriteRenderer Iris=transform.parent.GetComponent<SpriteRenderer>();
         SpriteRenderer item =GetComponent<SpriteRenderer>();
 
