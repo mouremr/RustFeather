@@ -61,8 +61,8 @@ public class StateMachine : MonoBehaviour
 
 
 
-        body = transform.Find("Body").gameObject;
-        legs = transform.Find("Body/Legs").gameObject;
+        body = transform.Find("Torso").gameObject;
+        legs = transform.Find("Legs").gameObject;
         rb = GetComponent<Rigidbody2D>();
         animator = body.GetComponent<Animator>();
         input = GetComponent<PlayerInput>();
