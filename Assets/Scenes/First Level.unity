@@ -14942,10 +14942,10 @@ MonoBehaviour:
   effector: {fileID: 1765818937}
   stairs: {fileID: 1765818927}
   playerTransform: {fileID: 7422214290490185841}
-  platform: {fileID: 1765874945}
   environmentMask:
     serializedVersion: 2
     m_Bits: 1025
+  platform: {fileID: 1765874945}
 --- !u!50 &1765818932
 Rigidbody2D:
   serializedVersion: 5
@@ -17924,7 +17924,7 @@ Camera:
   far clip plane: 1000
   field of view: 61.6
   orthographic: 1
-  orthographic size: 1.3
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

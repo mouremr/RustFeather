@@ -9,13 +9,13 @@ public class TwoWayStair : MonoBehaviour
     [SerializeField] private PlatformEffector2D effector;
     [SerializeField] private GameObject stairs;
     [SerializeField] private Transform playerTransform;
+    [SerializeField] private LayerMask environmentMask;
+    public bool DisabledByPlatform { get; set; }
     private bool isOnPlatform = false;
     private bool fellThrough = false;
     [SerializeField] private TwoWayPlatform platform;
     private readonly List<Bounds> stairBounds = new();
     private int currentStairIndex = -1;
-    public bool DisabledByPlatform { get; set; }
-    [SerializeField] private LayerMask environmentMask;
     private int platformLayer;
     private int defaultLayer;
 

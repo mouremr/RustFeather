@@ -32,6 +32,7 @@ public class TwoWayPlatform : MonoBehaviour
         if (isOnPlatform && Input.GetKeyDown(KeyCode.S) && !isFallingThrough)
         {
             DisablePlatform();
+            Debug.Log("should drop");
         }
 
         RaycastHit2D hit = Physics2D.BoxCast(
