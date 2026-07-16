@@ -32,7 +32,7 @@ public class AttackState : PlayerState
         {
             animator.SetBool(attackType, false);
             float legsNormalizedTime = animator.GetCurrentAnimatorStateInfo(1).normalizedTime % 1f;
-            animator.Play("movement Body", 0, legsNormalizedTime);
+            //animator.Play("movement Body", 0, legsNormalizedTime);
             stateMachine.ChangeState(stateMachine.States.Grounded(resetLegs));
         }
     }

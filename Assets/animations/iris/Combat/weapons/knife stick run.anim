@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Iris run body
+  m_Name: knife stick run
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,23 +21,23 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 4814963781893962527, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 8516227149848572692, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.083333336
-      value: {fileID: -7815484001813211742, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 447883634778113070, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.16666667
-      value: {fileID: 6325749333193953053, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 7849010352985604719, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.25
-      value: {fileID: 758371651626821029, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 447883634778113070, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.33333334
-      value: {fileID: -619611036102926836, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 8516227149848572692, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.41666666
-      value: {fileID: -3096759600214907282, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: -3252742430596452693, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.5
-      value: {fileID: 3863674462686844783, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 7849010352985604719, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     - time: 0.5833333
-      value: {fileID: -2602511284835864925, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+      value: {fileID: 447883634778113070, guid: d913854ff845e8246bee22ac929566e1, type: 3}
     attribute: m_Sprite
-    path: Torso
+    path: Weapon
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -49,7 +49,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3869152129
+      path: 1855955664
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -58,14 +58,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 4814963781893962527, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: -7815484001813211742, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: 6325749333193953053, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: 758371651626821029, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: -619611036102926836, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: -3096759600214907282, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: 3863674462686844783, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
-    - {fileID: -2602511284835864925, guid: 905018b503124b9499a2c01c1eec4432, type: 3}
+    - {fileID: 8516227149848572692, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: 447883634778113070, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: 7849010352985604719, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: 447883634778113070, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: 8516227149848572692, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: -3252742430596452693, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: 7849010352985604719, guid: d913854ff845e8246bee22ac929566e1, type: 3}
+    - {fileID: 447883634778113070, guid: d913854ff845e8246bee22ac929566e1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -28,7 +28,7 @@ public class RollingState: PlayerState
         rb.linearVelocity=Vector2.zero;
         Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
         
-        float dir = bodySpriteRenderer.flipX ? -1f : 1f;
+        float dir = torsoSpriteRenderer.flipX ? -1f : 1f;
 
         rb.AddForce(new Vector2(rollSpeed * dir, 0), ForceMode2D.Impulse);
         return;

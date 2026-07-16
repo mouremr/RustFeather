@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: iris climb
+  m_Name: knife stick stab
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 5615656494521732173, guid: 54a5b9d0ef9750c43b199ffaa8658ed5, type: 3}
-    - time: 0.33333334
-      value: {fileID: -3446753009274519910, guid: 54a5b9d0ef9750c43b199ffaa8658ed5, type: 3}
+      value: {fileID: -3666215930941416246, guid: 1c219dc12aef0554980895bfcf1fe68d, type: 3}
+    - time: 0.083333336
+      value: {fileID: -4715659843388266506, guid: 1c219dc12aef0554980895bfcf1fe68d, type: 3}
     attribute: m_Sprite
-    path: Torso
+    path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 3
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -37,7 +37,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3869152129
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -46,14 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 5615656494521732173, guid: 54a5b9d0ef9750c43b199ffaa8658ed5, type: 3}
-    - {fileID: -3446753009274519910, guid: 54a5b9d0ef9750c43b199ffaa8658ed5, type: 3}
+    - {fileID: -3666215930941416246, guid: 1c219dc12aef0554980895bfcf1fe68d, type: 3}
+    - {fileID: -4715659843388266506, guid: 1c219dc12aef0554980895bfcf1fe68d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666667
+    m_StopTime: 0.16666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
