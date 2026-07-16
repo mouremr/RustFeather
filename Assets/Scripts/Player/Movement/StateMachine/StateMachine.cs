@@ -5,7 +5,7 @@ public class StateMachine : MonoBehaviour
 {
 
     [SerializeField] private PlayerStateConfig stateConfig;
-    private GameObject body;
+    private GameObject torso;
     private GameObject legs;
     //[SerializeField] private LayerMask climbable;
     // [SerializeField] private PhysicsMaterial2D noFriction;
@@ -40,8 +40,9 @@ public class StateMachine : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public Animator animator { get; private set; }
     public PlayerInput input { get; private set; }
-    public SpriteRenderer bodySpriteRenderer { get; private set; }
+    public SpriteRenderer torsoSpriteRenderer { get; private set; }
     public SpriteRenderer legsSpriteRenderer { get; private set; }
+    public SpriteRenderer weaponSpriteRenderer {get; private set; }
     public BoxCollider2D playerCollider { get; private set; }
     public CameraFollow cam { get; private set; }
     public LayerMask groundMask { get; private set; }
@@ -61,13 +62,14 @@ public class StateMachine : MonoBehaviour
 
 
 
-        body = transform.Find("Torso").gameObject;
+        torso = transform.Find("Torso").gameObject;
         legs = transform.Find("Legs").gameObject;
         rb = GetComponent<Rigidbody2D>();
-        animator = body.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         input = GetComponent<PlayerInput>();
-        bodySpriteRenderer = body.GetComponent<SpriteRenderer>();
+        torsoSpriteRenderer = torso.GetComponent<SpriteRenderer>();
         legsSpriteRenderer = legs.GetComponent<SpriteRenderer>();
+        weaponSpriteRenderer = transform.Find("Weapon").GetComponent<SpriteRenderer>();
         playerCollider = GetComponent<BoxCollider2D>();
         cam = Camera.main.GetComponent<CameraFollow>();
         groundMask = LayerMask.GetMask("Ground");

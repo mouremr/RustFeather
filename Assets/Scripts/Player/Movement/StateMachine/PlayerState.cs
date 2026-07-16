@@ -11,8 +11,9 @@ public abstract class PlayerState
     protected Animator animator;
     protected PlayerInput input;
     protected BoxCollider2D playerCollider;
-    protected SpriteRenderer bodySpriteRenderer;
+    protected SpriteRenderer torsoSpriteRenderer;
     protected SpriteRenderer legsSpriteRenderer;
+    protected SpriteRenderer weaponSpriteRenderer;
     protected CameraFollow camera;
 
     //LayerMask references
@@ -31,8 +32,9 @@ public abstract class PlayerState
         rb = stateMachine.rb;
         animator = stateMachine.animator;
         input = stateMachine.input;
-        bodySpriteRenderer = stateMachine.bodySpriteRenderer;
+        torsoSpriteRenderer = stateMachine.torsoSpriteRenderer;
         legsSpriteRenderer = stateMachine.legsSpriteRenderer;
+        weaponSpriteRenderer = stateMachine.weaponSpriteRenderer;
         playerCollider = stateMachine.playerCollider;
         camera = stateMachine.cam;
         groundMask = stateMachine.groundMask;
@@ -104,7 +106,7 @@ public abstract class PlayerState
         Vector2 hipOrigin = (Vector2)player.transform.position + Vector2.up * 1f;
         Vector2 headOrigin = hipOrigin + Vector2.up * 1f;
 
-        Vector2 castDir = bodySpriteRenderer.flipX ? Vector2.left : Vector2.right;
+        Vector2 castDir = torsoSpriteRenderer.flipX ? Vector2.left : Vector2.right;
         float rayLength = 0.5f;
         RaycastHit2D hipHit = Physics2D.Raycast(hipOrigin, castDir, rayLength,platformMask);
         RaycastHit2D headHit = Physics2D.Raycast(headOrigin, castDir, rayLength,platformMask);

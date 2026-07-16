@@ -56,8 +56,8 @@ public class GroundedState : PlayerState
     public override void Enter()
     {   
         if(resetAnims){
-            animator.Play("movement Body", 0, 0f);
-            animator.Play("movement Legs", 1, 0f);
+            // animator.Play("movement Body", 0, 0f);
+            // animator.Play("movement Legs", 1, 0f);
         }   
         animator.SetBool("grounded", true);
         animator.SetBool("running", true);
@@ -93,6 +93,7 @@ public class GroundedState : PlayerState
         else
         {
             legsSpriteRenderer.enabled = true;
+            weaponSpriteRenderer.enabled = true;
         }
 
         if (IsGrounded())
@@ -127,8 +128,10 @@ public class GroundedState : PlayerState
 
     private void FlipX()
     {
-        bodySpriteRenderer.flipX = input.HorizontalInput < 0;
-        legsSpriteRenderer.flipX = input.HorizontalInput < 0;
+        bool flip = input.HorizontalInput < 0;
+        torsoSpriteRenderer.flipX = flip;
+        legsSpriteRenderer.flipX = flip;
+        weaponSpriteRenderer.flipX = flip;
     }
 
     public override void FixedUpdate()
@@ -191,6 +194,7 @@ public class GroundedState : PlayerState
         {
             //wallclimbing state
             legsSpriteRenderer.enabled = false;
+            weaponSpriteRenderer.enabled = false;
             wallRegrabTimer = wallRegrabCooldown;
             animator.SetBool("grounded", false);
             animator.SetBool("running", false);
@@ -221,6 +225,7 @@ public class GroundedState : PlayerState
         {   
             //roll state
             legsSpriteRenderer.enabled = false;
+            weaponSpriteRenderer.enabled = false;
             animator.SetBool("grounded", false);
             stateMachine.ChangeState(stateMachine.States.Rolling(moveSpeed));
         }
@@ -236,6 +241,7 @@ public class GroundedState : PlayerState
         {
             //light attack
             //rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            weaponSpriteRenderer.enabled = false;
             animator.SetBool("running", false);
             stateMachine.ChangeState(stateMachine.States.LightAttack());
         }

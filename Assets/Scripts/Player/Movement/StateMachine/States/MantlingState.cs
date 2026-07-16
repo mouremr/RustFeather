@@ -23,7 +23,7 @@ public class MantlingState : PlayerState
     public override void Enter(){
         Vector2 hipOrigin = (Vector2)player.transform.position + Vector2.up * 1f;
 
-        Vector2 castDir = bodySpriteRenderer.flipX ? Vector2.left : Vector2.right;
+        Vector2 castDir = torsoSpriteRenderer.flipX ? Vector2.left : Vector2.right;
         float rayLength = 0.5f;
     
         headOrigin = hipOrigin + Vector2.up * 1f;
@@ -71,8 +71,8 @@ public class MantlingState : PlayerState
 
         mantleTimer += Time.deltaTime;
 
-        playerCollider.size = bodySpriteRenderer.bounds.size;
-        playerCollider.offset = bodySpriteRenderer.bounds.center - player.transform.position;
+        playerCollider.size = torsoSpriteRenderer.bounds.size;
+        playerCollider.offset = torsoSpriteRenderer.bounds.center - player.transform.position;
        
         if (mantleTimer >= MANTLE_DURATION)
         {

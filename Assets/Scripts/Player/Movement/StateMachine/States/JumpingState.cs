@@ -92,11 +92,11 @@ public class JumpingState : PlayerState
 
         if (rb.linearVelocity.x > 0.1f)
         {
-            bodySpriteRenderer.flipX = false;
+            torsoSpriteRenderer.flipX = false;
         }
         else if (rb.linearVelocity.x < -0.1f)
         {
-            bodySpriteRenderer.flipX = true;
+            torsoSpriteRenderer.flipX = true;
         }
 
 
