@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 905018b503124b9499a2c01c1eec4432
+guid: 48466ff908f1150498586c5c4589a1a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4814963781893962527
-    second: iris_run_arms_holding_0
+      213: -4831997116911646024
+    second: sprite_sheet (1)_0
   - first:
-      213: -7815484001813211742
-    second: iris_run_arms_holding_1
+      213: -5236798376896308232
+    second: sprite_sheet (1)_1
   - first:
-      213: 6325749333193953053
-    second: iris_run_arms_holding_2
+      213: 941011508473296331
+    second: sprite_sheet (1)_2
   - first:
-      213: 758371651626821029
-    second: iris_run_arms_holding_3
+      213: -3456209596567313718
+    second: sprite_sheet (1)_3
   - first:
-      213: -619611036102926836
-    second: iris_run_arms_holding_4
+      213: -2314676943549235514
+    second: sprite_sheet (1)_4
   - first:
-      213: -3096759600214907282
-    second: iris_run_arms_holding_5
+      213: 5034127026241225188
+    second: sprite_sheet (1)_5
   - first:
-      213: 3863674462686844783
-    second: iris_run_arms_holding_6
+      213: 5486026363670121458
+    second: sprite_sheet (1)_6
   - first:
-      213: -2602511284835864925
-    second: iris_run_arms_holding_7
+      213: -5679704251215048136
+    second: sprite_sheet (1)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,11 +117,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: iris_run_arms_holding_0
+      name: iris run torso holding_0
       rect:
         serializedVersion: 2
         x: 0
@@ -134,16 +147,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f1b39228c0032d240800000000000000
-      internalID: 4814963781893962527
+      spriteID: 89958d37ff7e13942b9319d5261cbb13
+      internalID: 1408198519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_1
+      name: iris run torso holding_1
       rect:
         serializedVersion: 2
         x: 62
@@ -156,16 +169,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2a5dc2465b2d98390800000000000000
-      internalID: -7815484001813211742
+      spriteID: 3c14b7deceeda6c4ebefc351f3b04509
+      internalID: -73706814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_2
+      name: iris run torso holding_2
       rect:
         serializedVersion: 2
         x: 124
@@ -178,16 +191,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d1f8037d08399c750800000000000000
-      internalID: 6325749333193953053
+      spriteID: d560c5c3dc4eda54f895765617bffe7f
+      internalID: 72902174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_3
+      name: iris run torso holding_3
       rect:
         serializedVersion: 2
         x: 186
@@ -200,16 +213,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5a561f6cff6468a00800000000000000
-      internalID: 758371651626821029
+      spriteID: caafe8968bd21e34b99860740dff465a
+      internalID: 246320819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_4
+      name: iris run torso holding_4
       rect:
         serializedVersion: 2
         x: 248
@@ -222,16 +235,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c0e5c26ab03b667f0800000000000000
-      internalID: -619611036102926836
+      spriteID: 6259cb6ecdd5d334e94e0a137e748539
+      internalID: 1248699875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_5
+      name: iris run torso holding_5
       rect:
         serializedVersion: 2
         x: 310
@@ -244,16 +257,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e66e86a0d891605d0800000000000000
-      internalID: -3096759600214907282
+      spriteID: 3b0eeefef5b9812449d695fef4d05586
+      internalID: -1517789757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_6
+      name: iris run torso holding_6
       rect:
         serializedVersion: 2
         x: 372
@@ -266,16 +279,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f67923404778e9530800000000000000
-      internalID: 3863674462686844783
+      spriteID: b0617d3cb2cd5db47bcb2d506c21f6e4
+      internalID: 305443137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: iris_run_arms_holding_7
+      name: iris run torso holding_7
       rect:
         serializedVersion: 2
         x: 434
@@ -288,10 +301,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3aea96f66c502ebd0800000000000000
-      internalID: -2602511284835864925
+      spriteID: 9948c852f70bdb942bade7205dce6b7d
+      internalID: 116470677
       vertices: []
       indices: 
       edges: []
@@ -300,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3214ca2fc5f73e64eb8b05d1bc11eb72
+    spriteID: 83e61e87c9767474da14fd77a9c959cd
     internalID: 0
     vertices: []
     indices: 
@@ -310,16 +323,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":69.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":62.0,"y":69.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      iris_run_arms_holding_0: 4814963781893962527
-      iris_run_arms_holding_1: -7815484001813211742
-      iris_run_arms_holding_2: 6325749333193953053
-      iris_run_arms_holding_3: 758371651626821029
-      iris_run_arms_holding_4: -619611036102926836
-      iris_run_arms_holding_5: -3096759600214907282
-      iris_run_arms_holding_6: 3863674462686844783
-      iris_run_arms_holding_7: -2602511284835864925
+      iris run torso holding_0: 1408198519
+      iris run torso holding_1: -73706814
+      iris run torso holding_2: 72902174
+      iris run torso holding_3: 246320819
+      iris run torso holding_4: 1248699875
+      iris run torso holding_5: -1517789757
+      iris run torso holding_6: 305443137
+      iris run torso holding_7: 116470677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
