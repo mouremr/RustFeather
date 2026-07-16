@@ -24,8 +24,10 @@ AnimationClip:
       value: {fileID: 4594208383167398615, guid: 98476224f69eae943801631c621a13a5, type: 3}
     - time: 0.083333336
       value: {fileID: 2621440674935077174, guid: 98476224f69eae943801631c621a13a5, type: 3}
+    - time: 1
+      value: {fileID: 0}
     attribute: m_Sprite
-    path: 
+    path: Weapon
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -37,7 +39,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 1855955664
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -48,12 +50,13 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 4594208383167398615, guid: 98476224f69eae943801631c621a13a5, type: 3}
     - {fileID: 2621440674935077174, guid: 98476224f69eae943801631c621a13a5, type: 3}
+    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.16666667
+    m_StopTime: 1.0833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
