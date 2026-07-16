@@ -17,14 +17,15 @@ public class TwoWayStair : MonoBehaviour
     private readonly List<Bounds> stairBounds = new();
     private int currentStairIndex = -1;
     private int platformLayer;
-    private int defaultLayer;
+    private int disabledPlatformLayer;
 
     private void Start()
     {
         effector.surfaceArc = 180f;
         CacheStairBounds();
+        disabledPlatformLayer = LayerMask.NameToLayer("DisabledPlatform");
         platformLayer = LayerMask.NameToLayer("Platform");
-        defaultLayer = LayerMask.NameToLayer("Default");
+        
     }
     
     void CacheStairBounds()
@@ -113,7 +114,7 @@ public class TwoWayStair : MonoBehaviour
         platform.DisabledByStairs = true;
         
         //remove stair layer to stop triggering run animation while falling through stairs.
-        stairs.layer = defaultLayer; 
+        stairs.layer = disabledPlatformLayer; 
         
         //disable platforms as well to stop catching on platforms connected below stairs
         platform.DisablePlatform(); 

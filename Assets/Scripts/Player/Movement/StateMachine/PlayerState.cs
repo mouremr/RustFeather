@@ -20,6 +20,7 @@ public abstract class PlayerState
     protected LayerMask climbableMask;
     protected LayerMask groundMask;
     protected LayerMask platformMask;
+    protected LayerMask defaultMask;
     
 
     public PlayerState(StateMachine stateMachine, PlayerStateConfig config)
@@ -29,17 +30,18 @@ public abstract class PlayerState
         this.config = config;
         player = stateMachine.gameObject;
         player = stateMachine.gameObject;
-        rb = stateMachine.rb;
-        animator = stateMachine.animator;
-        input = stateMachine.input;
-        torsoSpriteRenderer = stateMachine.torsoSpriteRenderer;
-        legsSpriteRenderer = stateMachine.legsSpriteRenderer;
-        weaponSpriteRenderer = stateMachine.weaponSpriteRenderer;
-        playerCollider = stateMachine.playerCollider;
-        camera = stateMachine.cam;
-        groundMask = stateMachine.groundMask;
-        climbableMask = stateMachine.climbableMask;
-        platformMask = stateMachine.platformMask;
+        rb = stateMachine.Rb;
+        animator = stateMachine.Animator;
+        input = stateMachine.Input;
+        torsoSpriteRenderer = stateMachine.TorsoSpriteRenderer;
+        legsSpriteRenderer = stateMachine.LegsSpriteRenderer;
+        weaponSpriteRenderer = stateMachine.WeaponSpriteRenderer;
+        playerCollider = stateMachine.PlayerCollider;
+        camera = stateMachine.Cam;
+        groundMask = stateMachine.GroundMask;
+        climbableMask = stateMachine.ClimbableMask;
+        platformMask = stateMachine.PlatformMask;
+        defaultMask = stateMachine.DefaultMask;
 
     }
 
@@ -59,19 +61,27 @@ public abstract class PlayerState
 
         Vector2 boxSize = new Vector2(bounds.size.x * 0.9f, 0.1f);
         Vector2 boxCenter = bounds.center - new Vector3(0, bounds.extents.y, 0);
-        RaycastHit2D hit = Physics2D.BoxCast(
+
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(groundMask | platformMask);
+        filter.useTriggers = false;
+        filter.useLayerMask = true;
+
+        RaycastHit2D[] results = new RaycastHit2D[1];
+        int hitCount = Physics2D.BoxCast(
             boxCenter,
             boxSize,
             0f,
             Vector2.down,
-            .1f,
-            groundMask | platformMask
+            filter,
+            results,
+            .1f
         );
 
         //Debug.DrawRay(boxCenter, Vector2.down * .1f, Color.green);
 
         
-        return hit.collider != null;
+        return hitCount > 0;
     }
 
 

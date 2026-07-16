@@ -16,14 +16,15 @@ public class TwoWayPlatform : MonoBehaviour
     [SerializeField] private LayerMask environmentMask;
     [SerializeField] private TwoWayStair stairs;
     private int platformLayer;
-    private int defaultLayer;
+    private int disabledPlatormLayer;
 
     private void Start()
     {
         boxCenter = platformCollider.bounds.center;
         boxSize = platformCollider.bounds.size;
+        disabledPlatormLayer = LayerMask.NameToLayer("DisabledPlatform");
         platformLayer = LayerMask.NameToLayer("Platform");
-        defaultLayer = LayerMask.NameToLayer("Default");
+        
     }
 
     void Update()
@@ -32,7 +33,6 @@ public class TwoWayPlatform : MonoBehaviour
         if (isOnPlatform && Input.GetKeyDown(KeyCode.S) && !isFallingThrough)
         {
             DisablePlatform();
-            Debug.Log("should drop");
         }
 
         RaycastHit2D hit = Physics2D.BoxCast(
@@ -87,6 +87,7 @@ public class TwoWayPlatform : MonoBehaviour
         isFallingThrough = true;
         Physics2D.IgnoreCollision(platformCollider, playerCollider, true);
         platform.tag = "Untagged";
+        platform.layer = disabledPlatormLayer;
         //platform.layer = defaultLayer;
         stairs.DisabledByPlatform = true;
         //stairs.DisableStairs();
@@ -96,6 +97,7 @@ public class TwoWayPlatform : MonoBehaviour
         isFallingThrough = false;
         Physics2D.IgnoreCollision(platformCollider, playerCollider, false);
         platform.tag = "Mantleable";
+        platform.layer = platformLayer;
         //platform.layer = platformLayer;
         stairs.DisabledByPlatform = false;
         //stairs.ResetStairs();

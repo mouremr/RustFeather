@@ -37,17 +37,18 @@ public class StateMachine : MonoBehaviour
     public PlayerStateFactory States { get; private set; }
 
 
-    public Rigidbody2D rb { get; private set; }
-    public Animator animator { get; private set; }
-    public PlayerInput input { get; private set; }
-    public SpriteRenderer torsoSpriteRenderer { get; private set; }
-    public SpriteRenderer legsSpriteRenderer { get; private set; }
-    public SpriteRenderer weaponSpriteRenderer {get; private set; }
-    public BoxCollider2D playerCollider { get; private set; }
-    public CameraFollow cam { get; private set; }
-    public LayerMask groundMask { get; private set; }
-    public LayerMask climbableMask { get; private set; }
-    public LayerMask platformMask { get; private set; }
+    public Rigidbody2D Rb { get; private set; }
+    public Animator Animator { get; private set; }
+    public PlayerInput Input { get; private set; }
+    public SpriteRenderer TorsoSpriteRenderer { get; private set; }
+    public SpriteRenderer LegsSpriteRenderer { get; private set; }
+    public SpriteRenderer WeaponSpriteRenderer {get; private set; }
+    public BoxCollider2D PlayerCollider { get; private set; }
+    public CameraFollow Cam { get; private set; }
+    public LayerMask GroundMask { get; private set; }
+    public LayerMask ClimbableMask { get; private set; }
+    public LayerMask PlatformMask { get; private set; }
+    public LayerMask DefaultMask { get; private set; }
 
     private void Awake()
     {
@@ -64,17 +65,18 @@ public class StateMachine : MonoBehaviour
 
         torso = transform.Find("Torso").gameObject;
         legs = transform.Find("Legs").gameObject;
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        input = GetComponent<PlayerInput>();
-        torsoSpriteRenderer = torso.GetComponent<SpriteRenderer>();
-        legsSpriteRenderer = legs.GetComponent<SpriteRenderer>();
-        weaponSpriteRenderer = transform.Find("Weapon").GetComponent<SpriteRenderer>();
-        playerCollider = GetComponent<BoxCollider2D>();
-        cam = Camera.main.GetComponent<CameraFollow>();
-        groundMask = LayerMask.GetMask("Ground");
-        climbableMask = LayerMask.GetMask("Climbable");
-        platformMask = LayerMask.GetMask("Platform");       
+        Rb = GetComponent<Rigidbody2D>();
+        Animator = GetComponent<Animator>();
+        Input = GetComponent<PlayerInput>();
+        TorsoSpriteRenderer = torso.GetComponent<SpriteRenderer>();
+        LegsSpriteRenderer = legs.GetComponent<SpriteRenderer>();
+        WeaponSpriteRenderer = transform.Find("Weapon").GetComponent<SpriteRenderer>();
+        PlayerCollider = GetComponent<BoxCollider2D>();
+        Cam = Camera.main.GetComponent<CameraFollow>();
+        GroundMask = LayerMask.GetMask("Ground");
+        ClimbableMask = LayerMask.GetMask("Climbable");
+        PlatformMask = LayerMask.GetMask("Platform");
+        DefaultMask = LayerMask.GetMask("Default");       
     }
 
     private void Start()
@@ -89,7 +91,7 @@ public class StateMachine : MonoBehaviour
         RegenStamina();
 
         // Handle global interaction input
-        if (Input.GetKeyDown(KeyCode.E) && interactionDetector.HasInteractible)
+        if (UnityEngine.Input.GetKeyDown(KeyCode.E) && interactionDetector.HasInteractible)
         {
             interactionDetector.CurrentInteractible.Interact(gameObject);
         }
