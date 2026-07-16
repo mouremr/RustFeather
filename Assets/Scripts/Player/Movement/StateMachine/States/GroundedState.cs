@@ -55,6 +55,7 @@ public class GroundedState : PlayerState
 
     public override void Enter()
     {   
+        
         if(resetAnims){
             // animator.Play("movement Body", 0, 0f);
             // animator.Play("movement Legs", 1, 0f);
@@ -66,7 +67,7 @@ public class GroundedState : PlayerState
         
         groundCheckTimer = groundCheckCooldown; // Start with cooldown
         rollCheckTimer = rollCheckCooldown;
-
+        weaponSpriteRenderer.enabled = true;
         if (animator.GetBool("rolling"))
             return;
     }
@@ -92,8 +93,9 @@ public class GroundedState : PlayerState
         }
         else
         {
+            //weaponSpriteRenderer.enabled = true;
             legsSpriteRenderer.enabled = true;
-            weaponSpriteRenderer.enabled = true;
+            
         }
 
         if (IsGrounded())
