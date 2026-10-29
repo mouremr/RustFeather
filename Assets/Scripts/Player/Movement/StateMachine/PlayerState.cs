@@ -223,4 +223,9 @@ public abstract class PlayerState
             amount
         ));
     }
+
+    public virtual void ToggleIndoors()
+    {
+        config.isInside = !config.isInside;
+    }
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "playerStateConfig", menuName = "Player/Player State Config")]
 public class PlayerStateConfig : ScriptableObject
 {
+    [Header("State")]
+    public bool isInside = false;
+
     [Header("Movement")]
     public float moveSpeed = 6f;
     public float jumpForce = 5f;
