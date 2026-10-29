@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: purple_patchwork_wall 1_30
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 1139188424, guid: 09de37210f4141a4c9f2c2bf3f71ea18, type: 3}
+  m_Sprite: {fileID: -412652721, guid: 09de37210f4141a4c9f2c2bf3f71ea18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

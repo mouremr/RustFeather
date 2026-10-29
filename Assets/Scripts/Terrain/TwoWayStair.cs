@@ -44,6 +44,7 @@ public class TwoWayStair : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Entered");
         if (collision.collider == playerCollider && !isOnPlatform)
         {
             isOnPlatform = true;
@@ -55,6 +56,7 @@ public class TwoWayStair : MonoBehaviour
     {
         if (isOnPlatform && Input.GetKeyDown(KeyCode.S))
         {
+            Debug.Log("Should drop");
             DisableStairs();
         }
 
@@ -67,16 +69,21 @@ public class TwoWayStair : MonoBehaviour
         // Check if player is overlapping with anything, reset if not
         if (fellThrough)
         {
-            ContactFilter2D filter = new ContactFilter2D();
-            filter.SetLayerMask(environmentMask);
-            filter.useTriggers = false;
+            bool belowStairs = playerCollider.bounds.max.y <= stairBounds[currentStairIndex].min.y;
 
-            Collider2D[] results = new Collider2D[1];
-            int overlapCount = playerCollider.Overlap(filter, results);
-
-            if (overlapCount == 0)
+            if (belowStairs)
             {
-                ResetStairs();
+                ContactFilter2D filter = new ContactFilter2D();
+                filter.SetLayerMask(environmentMask);
+                filter.useTriggers = false;
+
+                Collider2D[] results = new Collider2D[1];
+                int overlapCount = playerCollider.Overlap(filter, results);
+
+                if (overlapCount == 0)
+                {
+                    ResetStairs();
+                }
             }
         }
     }
@@ -110,6 +117,7 @@ public class TwoWayStair : MonoBehaviour
         
         //remove stair layer to stop triggering run animation while falling through stairs.
         stairs.layer = disabledPlatformLayer; 
+        Debug.Log("changed layer");
         
         //disable platforms as well to stop catching on platforms connected below stairs
         platform.DisablePlatform(); 

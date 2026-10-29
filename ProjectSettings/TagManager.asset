@@ -48,11 +48,23 @@ TagManager:
   - name: Interactables
     uniqueID: 3374223195
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Interior
+    uniqueID: 311257449
+    locked: 0
+  - name: Exterior
+    uniqueID: 3528247831
+    locked: 0
+  - name: Player
+    uniqueID: 1614849913
     locked: 0
   - name: Foreground
     uniqueID: 2039221553
+    locked: 0
+  - name: UI
+    uniqueID: 2229104989
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   m_RenderingLayers:
   - Default

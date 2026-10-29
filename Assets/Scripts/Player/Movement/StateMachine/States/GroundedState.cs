@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class GroundedState : PlayerState
 {
+    private static readonly int RollingHash = Animator.StringToHash("rolling");
+    private static readonly int RunningHash = Animator.StringToHash("running");
+    private static readonly int GroundedHash = Animator.StringToHash("grounded");
+    private static readonly int XVelocityHash = Animator.StringToHash("xVelocity");
+    private static readonly int OnStairHash = Animator.StringToHash("OnStair");
     private float moveSpeed;
     private float groundCheckCooldown = 0.1f;
     private float groundCheckTimer = 0f;
@@ -52,15 +57,15 @@ public class GroundedState : PlayerState
     {
         
         //animator.Play("Ground Movement");   
-        animator.SetBool("grounded", true);
-        animator.SetBool("running", true);
+        animator.SetBool(GroundedHash, true);
+        animator.SetBool(RunningHash, true);
         input.ConsumeRoll();
         legsSpriteRenderer.enabled = true;
                 
         groundCheckTimer = groundCheckCooldown; // Start with cooldown
         rollCheckTimer = rollCheckCooldown;
         weaponSpriteRenderer.enabled = true;
-        if (animator.GetBool("rolling"))
+        if (animator.GetBool(RollingHash))
             return;
     }
 
@@ -73,7 +78,7 @@ public class GroundedState : PlayerState
         groundCheckTimer = Mathf.Max(0f, groundCheckTimer - Time.deltaTime);
         rollCheckTimer = Mathf.Max(0f, rollCheckTimer - Time.deltaTime);
         
-        animator.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocity.x), 0.05f, Time.deltaTime);
+        animator.SetFloat(XVelocityHash, Mathf.Abs(rb.linearVelocity.x), 0.05f, Time.deltaTime);
 
         if (IsGrounded())
         {
@@ -82,10 +87,10 @@ public class GroundedState : PlayerState
         else
         {
             coyoteTimer -= Time.deltaTime;
-            animator.SetBool("grounded", false);
+            animator.SetBool(GroundedHash, false);
         }
 
-        animator.SetBool("OnStair", onSlope);
+        animator.SetBool(OnStairHash, onSlope);
 
         ChangeState(); //check if possible to change state
 
@@ -239,11 +244,11 @@ public class GroundedState : PlayerState
             //lunge slightly forward if standing still
             if (rb.linearVelocityX < .01f && !onSlope)
             {
-                float facingDirectionX = player.transform.localScale.x;
+                Vector2 facingDirectionX = new Vector2(player.transform.localScale.x, 0);
 
                 if (Mathf.Abs(rb.linearVelocityX) < 0.01f)
                 {
-                    player.transform.position += new Vector3(0.5f * facingDirectionX, 0f, 0f);
+                    rb.AddForce(facingDirectionX * 3f, ForceMode2D.Impulse);
                 }
             }
 
@@ -305,19 +310,10 @@ public class GroundedState : PlayerState
         {
             slopeNormalPerpendicular = Vector2.Perpendicular(hit.normal).normalized;
             slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
-
-            if (slopeDownAngle > 0.05f)
-            {
-                onSlope = true;
-            }
-            else if (slopeSideAngle == 0f)
-            {
-                onSlope = false;
-            }
-
+            onSlope = slopeDownAngle > 0.05f;   // authoritative: ground truth wins, no exception
             slopeDownAngleOld = slopeDownAngle;
         }
-        else if (slopeSideAngle == 0f)
+        else
         {
             onSlope = false;
         }
