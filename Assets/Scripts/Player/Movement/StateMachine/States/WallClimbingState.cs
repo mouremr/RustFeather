@@ -135,7 +135,7 @@ public class WallClimbingState : PlayerState
             stateMachine.ChangeState(stateMachine.PlayerStates.Grounded());
             return;
         }
-        if (canMantle())
+        if (CanMantle())
         {
             animator.SetBool("climbing", false);
             stateMachine.ChangeState(stateMachine.PlayerStates.Mantling());

@@ -90,12 +90,12 @@ public abstract class PlayerState
             castDistance
         );
 
-    #if UNITY_EDITOR
+        #if UNITY_EDITOR
             DrawBoxCastDebug(boxCenter, boxSize, Vector2.down, castDistance, hitCount > 0);
-    #endif
+        #endif
 
             return hitCount > 0;
-        }
+    }
 
     #if UNITY_EDITOR
         // Draws the swept boxcast volume used by IsGrounded(): the box at its start position,
@@ -168,7 +168,7 @@ public abstract class PlayerState
         direction = 0;
         return false;
     }
-    protected bool canMantle()
+    protected bool CanMantle()
     {
         Vector2 hipOrigin = (Vector2)player.transform.position + Vector2.up * 1f;
         Vector2 headOrigin = hipOrigin + Vector2.up * 1f;

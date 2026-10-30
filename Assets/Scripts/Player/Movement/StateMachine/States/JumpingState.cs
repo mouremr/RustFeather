@@ -62,7 +62,7 @@ public class JumpingState : PlayerState
         }
 
     
-        if (canMantle())
+        if (CanMantle())
         {
             animator.SetBool("jumping", false);
             animator.SetBool("climbing", false);
